@@ -7,7 +7,6 @@ class User:
         self.name = username
         self.email = email
         self.balance = 0
-        return self
     def withdraw(self, amount):
         self.balance -= amount
         return self
@@ -51,3 +50,18 @@ user3.display_user_balance()
 user1.transfer_money(user3, 500)
 user1.display_user_balance()
 user3.display_user_balance()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

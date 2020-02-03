@@ -7,15 +7,20 @@ class User:
         self.name = username
         self.email = email
         self.balance = 0
+        return self
     def withdraw(self, amount):
         self.balance -= amount
+        return self
     def deposit(self, amount):
         self.balance += amount
+        return self
     def display_user_balance(self):
         print('Balance: ', self.balance)
+        return self
     def transfer_money(self,other,amount):
         self.balance -= amount
         other.balance += amount
+        return self
 
 
 
